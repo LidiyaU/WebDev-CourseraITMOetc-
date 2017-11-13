@@ -7,32 +7,32 @@
 		var number = +prompt('введите число в диапазоне от -999 до 999');
 		
 		if ((number > -1000) & (number < 1000)){
-			switch (true) {
-			  case number > -1000 && number < -99: 
-				alert("отрицательное трехзначное число");
-					break;
-			  case number > -100 && number < -9:
-				alert("отрицательное двузначное число");
-					break;
-			  case number > -9 && number < 0:
-				alert("отрицательное однозначное число");
-					break;
-			  case number === 0:
-				alert("нулевое число");
-					break;
-			  case number < 1000 && number > 99: 
-				alert("положительное трехзначное число");
-					break;
-			  case number < 100 && number > 9:
-				alert("положительное двузначное число");
-					break;
-			  case number < 9 && number > 0:
-				alert("положительное однозначное число");
-					break;  
+		    switch (true) {
+		        case number > -1000 && number < -99: 
+			    alert("отрицательное трехзначное число");
+			    break;
+			case number > -100 && number < -9:
+			    alert("отрицательное двузначное число");
+			    break;
+			case number > -9 && number < 0:
+			    alert("отрицательное однозначное число");
+		            break;
+			case number === 0:
+			    alert("нулевое число");
+			    break;
+			case number < 1000 && number > 99: 
+			    alert("положительное трехзначное число");
+			    break;
+			case number < 100 && number > 9:
+			    alert("положительное двузначное число");
+			    break;
+			case number < 9 && number > 0:
+			    alert("положительное однозначное число");
+			    break;  
 			}	
 		}
 		else {
-			alert('Не попали в диапазон от -999,999]');
+		    alert('Не попали в диапазон от -999,999]');
 		};
 	</script>
 
