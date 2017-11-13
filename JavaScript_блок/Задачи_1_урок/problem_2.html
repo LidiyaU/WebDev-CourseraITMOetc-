@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задача 2</title>
+	<script>
+		var number = +prompt('введите число в диапазоне от -999 до 999)');
+		
+		if ((number > -1000) & (number < 1000)){
+			switch (true) {
+			  case number > -1000 && number < -99: 
+				alert("отрицательное трехзначное число");
+					break;
+			  case number > -100 && number < -9:
+				alert("отрицательное двузначное число");
+					break;
+			  case number > -9 && number < 0:
+				alert("отрицательное однозначное число");
+					break;
+			  case number === 0:
+				alert("нулевое число");
+					break;
+			  case number < 1000 && number > 99: 
+				alert("положительное трехзначное число");
+					break;
+			  case number < 100 && number > 9:
+				alert("положительное двузначное число");
+					break;
+			  case number < 9 && number > 0:
+				alert("положительное однозначное число");
+					break;  
+			}	
+		}
+		else {
+			number = prompt('Не попали в диапазон от -999,999]');
+		};
+	</script>
+
+</head>
+<body>
+<h1>Дано целое число, лежащее в диапазоне от -999 до 999</h1>. 
+<p>Вывести строку - словесное описание данного числа вида 
+"отрицательное двузначное число", 
+"нулевое число", 
+"положительное однознаное число" и т.д.</p>	
+</body>
+</html>
