@@ -4,7 +4,7 @@
 
 ### Block 2: JavaScript
 
-##### Module 1 Solutions
+##### Lesson 1 Solutions (11-11-2017)
 [Problem 1](https://lidiyau.github.io/WebDevITMO/JavaScript_block/Lesson_1_assignments/problem_1.html) - Найти наименьшее из введенных чисел   
 [Problem 2](https://lidiyau.github.io/WebDevITMO/JavaScript_block/Lesson_1_assignments/problem_2.html) - Вывод характеристик числа  
 [Problem 3](https://lidiyau.github.io/WebDevITMO/JavaScript_block/Lesson_1_assignments/problem_3.html) - Вывод названия цифры  
