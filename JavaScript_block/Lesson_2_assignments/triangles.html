@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Треугольник прямоугольный?</title>
+    <script>
+        var x1 = +prompt('Введите координату x1 для точки A', '');
+        var y1 = +prompt('Введите координату y1 для точки A', '');
+        var z1 = +prompt('Введите координату z1 для точки A', '');
+        
+        var x2 = +prompt('Введите координату x2 для точки B', '');
+        var y2 = +prompt('Введите координату y2 для точки B', '');
+        var z2 = +prompt('Введите координату z2 для точки B', '');
+    
+        var x3 = +prompt('Введите координату x3 для точки C', '');
+        var y3 = +prompt('Введите координату y3 для точки C', '');
+        var z3 = +prompt('Введите координату z3 для точки C', '');
+        
+        var AB = Math.sqrt((Math.pow((x1 - x2), 2)) + (Math.pow((y1 - y2), 2)) + (Math.pow((z1 - z2), 2)));
+        var BC = Math.sqrt((Math.pow((x2 - x3), 2)) + (Math.pow((y2 - y3), 2)) + (Math.pow((z2 - z3), 2)));
+        var AC = Math.sqrt((Math.pow((x1 - x3), 2)) + (Math.pow((y1 - y3), 2)) + (Math.pow((z1 - z3), 2)));
+        
+        var A = +((Math.acos((Math.pow(AC, 2) - Math.pow(AB, 2) + Math.pow(BC, 2)) / (2 * AC * BC))) * 180 / Math.PI).toFixed(2);
+        var B = +((Math.acos((Math.pow(AB, 2) - Math.pow(AC, 2) + Math.pow(BC, 2)) / (2 * AB * BC))) * 180 / Math.PI).toFixed(2);
+        var C = +((Math.acos((Math.pow(AB, 2) - Math.pow(BC, 2) + Math.pow(AC, 2)) / (2 * AB * AC))) * 180 / Math.PI).toFixed(2);
+        
+        if ((A == 90.00 || B == 90.00 || C == 90.00) && A + B + C == 180.00) {
+            alert("Треугольник является прямоугольным");
+        } else {
+            alert("Треугольник не является прямоугольным");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

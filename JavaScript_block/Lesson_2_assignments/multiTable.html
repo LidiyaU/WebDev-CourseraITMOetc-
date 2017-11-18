@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица умножения</title>
+</head>
+<body>
+<script>
+    var rowNum, colNum, result, row, col, tr, trFinish, td, tdFinish;
+    result = "";  
+    tr = "<tr>"; 
+    trFinish = "</tr>";
+    td = "<td>";
+    tdFinish = "</td>";
+    row = 1;
+    col = 1;
+    rowNum = +prompt("Чтобы нарисовать таблицу умножения, для начала введите количество строк:");
+    colNum = +prompt("Теперь введите количество столбцов:");
+    
+    result = result + "<table>" + tr + td + tdFinish;
+        while (col <= colNum) {
+        result = result + "<td>" + col + tdFinish;
+        col++;
+    }
+    result = result + trFinish;
+    while (row <= rowNum) {
+        col = 1;
+        result = result + tr + "<td>" + row + tdFinish; 
+        while (col <= colNum) {
+            result += td + row * col + tdFinish;
+            col++;
+        }
+        result = result + trFinish;
+        row++;
+    }
+    result = result + "</table>";
+    document.write("Таблица умножения на " + rowNum + "\n" + result);
+</script>
+</body>
+</html>

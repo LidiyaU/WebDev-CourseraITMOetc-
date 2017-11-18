@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+</head>
+<body>
+    <script>
+        var measures = +prompt("Введите число, обозначающее единицу измерения из списка ниже:\n" + 
+                     "1 — дециметр\n2 — километр\n3 — метр\n4 — миллиметр\n5 — сантиметр"); 
+        var distance = +prompt("Введите длину отрезка");
+        switch (measures) {
+            case 1:
+                alert("Округленная до сотых длина отрезка в метрах составляет " + (distance / 10).toFixed(2) + " м");
+                break;
+            case 2:
+                alert("Округленная до сотых длина отрезка в метрах составляет " + (distance * 1000).toFixed(2) + " м");
+                break;
+            case 3:
+                alert("Округленная до сотых длина отрезка в метрах составляет " + distance.toFixed(2) + " м");
+                break;
+            case 4:
+                alert("Округленная до сотых длина отрезка в метрах составляет " + (distance / 1000).toFixed(2) + " м");
+                break;
+            case 5:
+                alert("Округленная до сотых длина отрезка в метрах составляет " + (distance / 100).toFixed(2) + " м");
+                break; 
+        };
+    </script>
+</body>
+</html>
+                    
