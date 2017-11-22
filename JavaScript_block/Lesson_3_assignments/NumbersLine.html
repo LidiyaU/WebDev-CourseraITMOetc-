@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Строку в цифры</title>
+    <script>
+        var str = prompt("Введите несколько цифр без пробела");
+        var arr = str.split('');
+        var summ = 0;
+        for (var i = 0; i < arr.length; i++) {
+            summ += parseInt(arr[i]);
+        }
+        alert(summ);
+    </script>
+</head>
+<body>
+    <h1>Дана строка, изображающая целое число. Вывести сумму цифр этого числа.</h1>
+</body>
+</html>

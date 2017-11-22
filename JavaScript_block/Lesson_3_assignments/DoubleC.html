@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Меняем букву?</title>
+</head>
+<body>
+    <script>
+        var str = prompt("Меняем букву? Введите любую строку:");
+        var lookFor = prompt("Введите то, что будем менять:");
+        var change = prompt("Введите, на что будем менять:");
+        var regexp = new RegExp(lookFor, "gi");
+        str = str.replace(regexp, change);
+        alert(str);
+    </script>
+</body>
+</html>
