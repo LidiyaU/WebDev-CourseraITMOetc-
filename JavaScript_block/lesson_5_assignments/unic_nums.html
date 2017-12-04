@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [1,2,3,2,7,6,5];
+        var b = [3,2,4,4,5,7];
+        var c = [];
+        var d = [];
+        for (var i = 0; i < a.length; i++){
+            c[a[i]] = 0;
+        }
+        for (var i = 0; i < b.length; i++){
+            c[b[i]] = 0;
+        }
+        for (var j in c){
+            d.push(j);
+        }
+        console.log(d);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+   <p>Написать отдельную функцию, которая выводит пользователю 
+заданное число чисел Фибоначчи. (например, первых 8 чисел Фибоначчи: 1, 1, 2, 3, 5, 8, 13, 21). Заданное число передается функции в качестве аргумента. </p>
+    <script>
+        var n = +prompt('Введите нужное вам количество чисел Фибоначчи');
+        function fibonacci(n){
+            var x = 1;
+            var y = 1;
+            var fib = [1, 1];
+            for (var i = 2; i < n; i++) {
+               y = x + y;
+               x = y - x;
+               fib.push(y);
+            }
+            return fib;
+        }
+        console.log(fibonacci(n)); 
+    </script>
+</body>
+</html>
