@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Факториал рекурсией</title>
+    
+</head>
+<body>
+    <script>
+        var n = +prompt('Введите число, факториал которого вам надо вычислить');
+        if(typeof n == 'number' && n >= 0){
+            alert('Факториал: ' + factorial(n));
+        } else{
+            alert('Нужно ввести число больше, либо равное 0');
+        }
+        function factorial(n) {
+            if (n == 0) {
+                return 1;
+            }else {
+                return (n * factorial(n - 1));
+            }
+        }            
+    </script>
+</body>
+</html>
