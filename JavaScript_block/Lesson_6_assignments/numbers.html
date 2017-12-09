@@ -34,9 +34,16 @@
             }
         }
         
-     var numbers = generateNumbers();
-      console.log(numbers());
-        
+        var numbers = generateNumbers();
+        function printNums() {
+            var i = 1;
+            var timerId = setTimeout(function go() {
+                console.log(numbers());
+                if (i <= 100) setTimeout(go, 100);
+                i++;
+            }, 100);
+         }
+        printNums();
     </script>
 
 </body>
