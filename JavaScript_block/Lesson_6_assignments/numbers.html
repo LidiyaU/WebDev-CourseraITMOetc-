@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+Сделайте функцию, каждый вызов который будет генерировать случайные числа 
+от 1 до 100, но так, чтобы они не повторялись, пока не будут перебраны все числа из этого промежутка. Решите задачу через замыкания - в замыкании должен хранится массив чисел, которые уже были сгенерированы функцией.
+    </p>
+    <script>
+        function generateNumbers() {
+            var arr = [];
+            function randomNumbers() {
+                return Math.floor(Math.random() * 100) + 1;
+            }
+            return function add() {
+                var randNum = randomNumbers();
+                if (arr.length < 100) {
+                    if (arr.indexOf(randNum, 0) === -1) {
+                        arr.push(randNum);
+                        return arr;
+                    } else {
+                        while(arr.indexOf(randNum, 0) !== -1) {
+                        randNum = randomNumbers();
+                        } 
+                        arr.push(randNum);
+                        return arr;
+                    }
+                } else {
+                    return arr + ' числа в диапазоне от 1 до 100 закончились';
+                }
+            }
+        }
+        
+     var numbers = generateNumbers();
+      console.log(numbers());
+        
+    </script>
+
+</body>
+</html>
