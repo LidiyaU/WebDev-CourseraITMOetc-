@@ -20,14 +20,14 @@
                 if (arr.length < 100) {
                     if (arr.indexOf(randNum, 0) === -1) {
                         arr.push(randNum);
-                        console.log(randNum)
+                        console.log(randNum);
                         return arr;
                     } else {
                         while(arr.indexOf(randNum, 0) !== -1) {
                         randNum = randomNumbers();
                         } 
                         arr.push(randNum);
-                         console.log(randNum)
+                         console.log(randNum);
                         return arr;
                     }
                 } else {
