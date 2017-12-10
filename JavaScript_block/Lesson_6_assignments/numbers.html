@@ -20,12 +20,14 @@
                 if (arr.length < 100) {
                     if (arr.indexOf(randNum, 0) === -1) {
                         arr.push(randNum);
+                        console.log(randNum)
                         return arr;
                     } else {
                         while(arr.indexOf(randNum, 0) !== -1) {
                         randNum = randomNumbers();
                         } 
                         arr.push(randNum);
+                         console.log(randNum)
                         return arr;
                     }
                 } else {
@@ -34,16 +36,17 @@
             }
         }
         
-        var numbers = generateNumbers();
-        function printNums() {
+       var numbers = generateNumbers();
+      //console.log(numbers());
+         function printNums() {
             var i = 1;
             var timerId = setTimeout(function go() {
-                console.log(numbers());
+                console.log(numbers());              
                 if (i <= 100) setTimeout(go, 100);
                 i++;
             }, 100);
          }
-        printNums();
+        printNums();  
     </script>
 
 </body>
