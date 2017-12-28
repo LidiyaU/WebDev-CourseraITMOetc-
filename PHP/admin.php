@@ -9,18 +9,19 @@
 
 <body>
 
-    <?php
-    echo '<form action="form_handler.php" method="POST">
+    <?php    
+    
+    echo '<form action="handler.php" method="POST">
         <fieldset>
             
             <label for="newDate">Enter event date</label>
-            <input type="date" name="date" id="newDate">
+            <input type="date" name="date" id="date">
             
             <label for="newHeader">Enter event header</label>
-            <input type="text" name="header" id="newHeader">
+            <input type="text" name="header" id="header">
             
             <label for="newDesc">Enter event description</label>
-            <textarea name="desc" id="newDesc"></textarea>
+            <textarea name="descr" id="newDesc"></textarea>
             
             <input type="submit" value="Submit">
         </fieldset>
