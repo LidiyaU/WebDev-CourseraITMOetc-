@@ -13,8 +13,8 @@
 ***
 [ИГРА "УГАДАЙ ЦВЕТ"](https://lidiyau.github.io/WebDevITMO/JavaScript_block/Игра/game.html) - По выданным значениям RGB угадать цвет
 ***
-######Ссылки на интересные репозитории:
-https://github.com/getify/You-Dont-Know-JS
-https://github.com/LidiyaU/Front-end-Developer-Interview-Questions
-https://github.com/jhu-ep-coursera/fullstack-course4
-https://github.com/jhu-ep-coursera/fullstack-course5
+###### Ссылки на интересные репозитории:
+https://github.com/getify/You-Dont-Know-JS  
+https://github.com/LidiyaU/Front-end-Developer-Interview-Questions  
+https://github.com/jhu-ep-coursera/fullstack-course4  
+https://github.com/jhu-ep-coursera/fullstack-course5  
