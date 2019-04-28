@@ -13,6 +13,8 @@
 ***
 [ИГРА "УГАДАЙ ЦВЕТ"](https://lidiyau.github.io/WebDevITMO/JavaScript_block/Игра/game.html) - По выданным значениям RGB угадать цвет
 ***
+[XXX Design Studio Web Page](https://ulidi.github.io/Portfolio/Design_Page/index.html) - a template for some design studio web page. Pictures are taken from pexels.com stock and are free for personal and commercial use.
+***
 ###### Ссылки на интересные репозитории:
 https://github.com/getify/You-Dont-Know-JS  
 https://github.com/LidiyaU/Front-end-Developer-Interview-Questions  
