@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Guessing Game</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var colors = ['blue', 'cyan', 'green', 'grey', 'gold', 'magenta', 'orange', 'red', 'white', 'yellow'];
+		var target = colors[Math.floor(Math.random() * colors.length)];
+		finished = false;
+		count = 1;
+		guess = undefined;
+		alert("This is the answer, so you won't lose too much time on checking: \n" + "\n" + target);
+		(function game(){
+			while (!finished){
+				var guess = prompt("I am thinking of one of this colors:  \n" + " \n" + "blue, cyan, green, grey, gold, magenta, orange, red, white, yellow  \n" + " \n" + "What color am I thinking of? \n" + " \n", "color");
+				finished = checkGuess();
+				count+=1;
+			}
+			function checkGuess(){
+				if (colors.indexOf(guess) === -1){
+					alert("I don't recignize the color");
+					return false;
+				}
+				else if (colors.indexOf(guess) >  colors.indexOf(target)){
+					alert("Your color is alphabetically higher then mine");
+					return false;
+				}
+				else if (colors.indexOf(guess) < colors.indexOf(target)){
+					alert("Your color is alphabetically lower then mine");
+					return false;
+				}
+				else if (guess !== target) {
+					alert("Try again");
+					return false;
+				}
+				else {
+     				myBody = document.getElementsByTagName("body")[0];
+     				myBody.style.background = target;
+                    alert("Congrats! You guessed it in " + count + " shots!");
+					return true;
+				}				 
+			}
+		})();
+			
+	</script>
+</body>
+</html>
