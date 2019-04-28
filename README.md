@@ -10,5 +10,11 @@
 [Problem 3](https://lidiyau.github.io/WebDevITMO/JavaScript_block/Lesson_1_assignments/problem_3.html) - Вывод названия цифры  
 [Problem 4](https://lidiyau.github.io/WebDevITMO/JavaScript_block/Lesson_1_assignments/Problem_4.html) - Вывод названия отметки  
 [Problem 5](https://lidiyau.github.io/WebDevITMO/JavaScript_block/Lesson_1_assignments/problem_5.html) - Определить истинность высказывания, что среди трех чисел есть хоть одна пара совпадающих   
+***
 [ИГРА "УГАДАЙ ЦВЕТ"](https://lidiyau.github.io/WebDevITMO/JavaScript_block/Игра/game.html) - По выданным значениям RGB угадать цвет
 ***
+######Ссылки на интересные репозитории:
+https://github.com/getify/You-Dont-Know-JS
+https://github.com/LidiyaU/Front-end-Developer-Interview-Questions
+https://github.com/jhu-ep-coursera/fullstack-course4
+https://github.com/jhu-ep-coursera/fullstack-course5
